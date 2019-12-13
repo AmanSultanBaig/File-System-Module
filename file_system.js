@@ -22,3 +22,7 @@ let writefile = fs.writeFile('writeFile.txt','Aman Sultan Baig with asynchronous
 let FileRead = fs.readFile('writeFile.txt','utf-8',(err, content) => {
   (err) ? console.log(err) : console.log(content)
 });
+
+let deleteFile = fs.unlink('writeFile.txt',(err) => {
+   (err) ? console.log(err) : console.log('File Deleted with asynchronous approach')
+});
