@@ -13,6 +13,8 @@ let fileExist = fs.unlinkSync('writeFile.txt');
 if(!makeFile) console.log(`File dosen't exists`);
 else console.log(`File DELETED Successfully!`);
 
+console.log('-------------------------------------------')
+
 // asynchronous approach
 
 let writefile = fs.writeFile('writeFile.txt','Aman Sultan Baig with asynchronous',(err) => {
