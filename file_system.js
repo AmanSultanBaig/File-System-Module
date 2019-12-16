@@ -28,3 +28,10 @@ let FileRead = fs.readFile('writeFile.txt','utf-8',(err, content) => {
 let deleteFile = fs.unlink('writeFile.txt',(err) => {
    (err) ? console.log(err) : console.log('File Deleted with asynchronous approach')
 });
+
+const createSpace = ' ';
+fs.appendFile('writeFile.txt', createSpace+'Some other text with append method!', 
+function (err) {
+  if (!err) console.log('Saved!');
+  else console.log('error occur while writing!');
+});
