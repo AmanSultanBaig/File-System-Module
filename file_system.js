@@ -3,11 +3,16 @@
 const fs = require('fs');
 let fileName = (__filename);
 
+// this code will create the file with given content
 let file = fs.writeFileSync('writeFile.txt','Aman Sultan Baig');
 console.log('File Created!');
 
+// this code will read the file content
 let makeFile = fs.readFileSync('writeFile.txt','utf-8');
 console.log(`'${makeFile}' is written in this File!`);
+
+// according to this code, code will check the existence of file, 
+// if there is any file so code will excute and remove the file 
 
 let fileExist = fs.unlinkSync('writeFile.txt');
 if(!makeFile) console.log(`File dosen't exists`);
