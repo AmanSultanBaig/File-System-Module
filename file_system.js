@@ -22,14 +22,17 @@ console.log('-------------------------------------------')
 
 // asynchronous approach
 
+// this code will execute asynchronously and create file 
 let writefile = fs.writeFile('writeFile.txt','Aman Sultan Baig with asynchronous',(err) => {
   (err) ? console.log(err) : console.log('File created with Asynchronous Approach')
 });
 
+// this code will execute asynchronously and read file content
 let FileRead = fs.readFile('writeFile.txt','utf-8',(err, content) => {
   (err) ? console.log(err) : console.log(content)
 });
 
+// this code will execute asynchronously and remove the file 
 let deleteFile = fs.unlink('writeFile.txt',(err) => {
    (err) ? console.log(err) : console.log('File Deleted with asynchronous approach')
 });
